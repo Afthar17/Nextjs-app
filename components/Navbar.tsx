@@ -25,13 +25,13 @@ const Navbar = ({ session }: { session: Session | null }) => (
         ) : (
           <>
             <Link
-              href="/trips"
+              href={"/trips"}
               className="text-sm font-semibold text-slate-900 hover:text-slate-600"
             >
               My Trip
             </Link>
             <Link
-              href="/globe"
+              href={"/globe"}
               className="text-sm font-semibold text-slate-900 hover:text-slate-600"
             >
               Explored

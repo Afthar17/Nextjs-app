@@ -27,6 +27,7 @@ model User {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  trips     Trip[]
 }
 
 model Account {
@@ -82,4 +83,17 @@ model Authenticator {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([userId, credentialID])
+}
+
+model Trip {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  imageUrl    String?
+  startDate   DateTime
+  endDate     DateTime
+  user        User     @relation(fields: [userId], references: [id])
+  userId      String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
