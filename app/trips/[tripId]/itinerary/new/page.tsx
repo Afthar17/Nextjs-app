@@ -7,6 +7,6 @@ export default async function NewItinerary({
 }: {
   params: { tripId: string };
 }) {
-  const { tripId } = await params;
+  const { tripId } = params;
   return <NewLocationClient tripId={tripId} />;
 }
