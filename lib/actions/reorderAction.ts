@@ -3,6 +3,7 @@
 import { auth } from "@/auth";
 import prisma from "../prisma";
 
+
 export const reorderLocations = async (tripId: string, newOrder: string[]) => {
     const session =  await auth();
     if(!session || !session.user?.id) {
