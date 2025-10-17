@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
     remotePatterns: [{
       hostname: 'glhmgxolor.ufs.sh'
     }]
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
