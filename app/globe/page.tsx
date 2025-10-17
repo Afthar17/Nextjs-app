@@ -78,7 +78,7 @@ export default function GlobePage() {
           <h1 className="text-xl text-start font-semibold ">
             Countries Visited
           </h1>
-          <div className=" border shadow-md border-blue-200 rounded-lg p-4 bg-blue-100 max-w-md text-blue-600">
+          <div className=" border shadow-md border-blue-200 rounded-lg p-4 bg-blue-50 max-w-md text-slate-800">
             <p className="text-sm ">
               You've visited{" "}
               <span className="font-bold">
@@ -89,7 +89,7 @@ export default function GlobePage() {
               {Array.from(visitedCountries || []).map((country, idx) => (
                 <div
                   key={idx}
-                  className=" border rounded-lg p-2 border-gray-300 shadow-blue-400 shadow-xs  hover:bg-blue-50 transition duration-300"
+                  className=" border rounded-lg p-2 border-gray-300 shadow-blue-400 shadow-xs  hover:bg-blue-200 transition duration-300"
                 >
                   <li
                     key={country}
