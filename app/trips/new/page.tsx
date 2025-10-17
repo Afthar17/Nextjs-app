@@ -9,8 +9,8 @@ export default function page() {
   const [isPending, startTransition] = useTransition();
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className=" flex flex-col min-w-lg shadow-sm px-4 py-8 border border-gray-200 rounded-lg">
+    <div className="flex items-center justify-center min-h-screen">
+      <div className=" flex flex-col min-w-lg shadow-sm px-4 py-8 border mt-10 overflow-auto border-gray-200 rounded-lg">
         <h1 className=" text-3xl text-center font-semibold">New Trip</h1>
         <form
           action={(formData: FormData) => {

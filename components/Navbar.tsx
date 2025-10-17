@@ -25,10 +25,16 @@ const Navbar = ({ session }: { session: Session | null }) => (
         ) : (
           <>
             <Link
+              href={`/`}
+              className="text-sm font-semibold text-slate-900 hover:text-slate-600"
+            >
+              Home
+            </Link>
+            <Link
               href={"/trips"}
               className="text-sm font-semibold text-slate-900 hover:text-slate-600"
             >
-              My Trip
+              My Trips
             </Link>
             <Link
               href={"/globe"}
